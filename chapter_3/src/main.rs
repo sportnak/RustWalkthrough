@@ -4,4 +4,7 @@ fn main() {
 
     x = 6;
     println!("The value of x is: {}", x);
+
+    let tup: () = ();
+
 }

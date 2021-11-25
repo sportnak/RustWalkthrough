@@ -29,3 +29,32 @@ Rust is statically typed. Types can be inferred, but some methods return multipl
 Four scalar types: integers, floating-point numbers, booleans, and characters.
 
 You can cause an integer overflow - but Rust will catch it and create a panic at runtime when compiling in debug mode. However, in release mode, Rust will instead wrap the value around back to the minimum
+
+Default floats are 64 bit because they are roughly the same speed as f32.
+
+### Compound Types
+
+Compound types allow you to group multiple values into one type. You can do this through tuples and arrays.
+
+Tuples:
+
+- fixed length
+- each position can have a unique type
+- extract values through destructuring or through `.{index}`
+- accessing values by index out of range fails to compile
+- empty tuple `()` is the default return type of functions
+
+Arrays:
+
+- fixed length
+- all elements must have same type
+- allocates data to the stack rather than the heap
+- not as flexible as the `vector` type
+- annotated as `[{type}; length]` or `[{value}; length]`
+- runtime indexing is checked
+
+## Functions
+
+- snake_case is the conventional style for functions and variable names
+
+Functions are started with `fn` . Rust doesn't care about the order in which functions are defined.
