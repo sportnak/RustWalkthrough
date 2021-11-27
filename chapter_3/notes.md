@@ -58,3 +58,25 @@ Arrays:
 - snake_case is the conventional style for functions and variable names
 
 Functions are started with `fn` . Rust doesn't care about the order in which functions are defined.
+
+Rust functions optionally end in an expression.
+Statements:
+
+- instructions that perform an action and do not return a value.
+
+Expressions:
+
+- evaluate to a resulting value.
+- Do not include ending semicolons
+
+## Iterations
+
+You can do a `loop`, `for` or `while` statements. You can name loops so that when they are nested you can control them with `continue` and `break` statements.
+
+### Loops
+
+`loop`s can return values with the `break` statements.
+
+### For Loops
+
+You can use an `in` operator to iterate the elements of an array. You can also do `(x..y)` to create a range.
